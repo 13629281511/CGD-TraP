@@ -45,7 +45,7 @@ pip install omegaconf numpy matplotlib scipy tqdm
 `python main.py --data_path './datasets' --mode 'train' --cfg ./configs/sdd.yml --manual_seed 0`
 
 - Evaluation on Stanford Drone Dataset (SDD)  
-`python main.py --data_path './datasets' --mode 'test' --cfg ./configs/sdd.yml --model_ckpt ./checkpoints/SDD/model_opt_sdd --manual_seed 0`  
+`python evaluation.py --data_path './datasets' --mode 'test' --cfg ./configs/sdd.yml --model_ckpt ./checkpoints/SDD/model_opt --manual_seed 0`  
 
 ## 5. Acknowledgement
 The code borrows from [LED](https://github.com/MediaBrain-SJTU/LED/tree/main), [PECNet](https://github.com/HarshayuGirase/Human-Path-Prediction/tree/master), [STGAT](https://github.com/huang-xx/STGAT), and data preprocessing part referring to [Social-GAN](https://github.com/agrimgupta92/sgan) and [LED](https://github.com/MediaBrain-SJTU/LED/tree/main). If you find this code useful in your research then please also cite their paper.
