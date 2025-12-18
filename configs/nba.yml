@@ -1,0 +1,28 @@
+# dataset
+dataset_type: 'NBA'
+obs_len: 10
+pred_len: 20
+num_epoch: 60
+batch_size: 16
+num_sample: 20
+data_scale: 5
+# optimizer
+lr: 1e-3
+weight_decay: 1e-4
+decay_step: 8
+decay_gamma: 0.5
+# hyper parameter for training
+hyper_param1: 5
+hyper_param2: 1
+# model parameters
+num_layers: 2
+num_heads: 4
+latent_dim: 256
+context_dim: 256
+mamba_dim: 128
+# diffusion
+timesteps: 1000
+scheduler: 'linear' # 'cosine' 'linear' 'quad' 'sigmoid'
+num_tau: 3
+scale_param: 1e-5
+ema: True
