@@ -5,7 +5,7 @@ Official PyTorch implementation of
 
 ## 1. Overview
 <p align="center">
-  <img src="overview.jpg" width="700">
+  <img src="fig/overview.jpg" width="700">
 </p>
 
 **Abstract**. Pedestrian behavior exhibits inherent multi-modality, necessitating predictions that balance accuracy and diversity to adapt effectively to various complex scenarios. However, conventional noise addition in diffusion models is often aimless and unguided, leading to redundant noise reduction steps and the generation of uncontrollable samples. To address these issues, we propose a Prior Condition-Guided Diffusion Model (CGD-TraP) for multi-modal pedestrian trajectory prediction. Instead of directly adding Gaussian noise to trajectories at each timestep during the forward process, our approach leverages internal intention and external interaction to guide noise estimation. Specifically, we design two specialized modules to extract and aggregate intention and interaction features. These features are then adaptively fused through a spatial-temporal fusion based on selective state space, which estimates a controllable noisy trajectory distribution. By optimizing the noise addition process in a more controlled and efficient manner, our method ensures that the denoising process is effectively guided, resulting in predictions that are both accurate and diverse. 
